@@ -1,0 +1,23 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.contact-container {
+  @apply bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen;
+}
+
+.contact-header {
+  @apply text-4xl font-bold mb-4;
+}
+
+.contact-form {
+  @apply bg-gray-800 p-6 rounded-lg;
+}
+
+.contact-form-input {
+  @apply bg-gray-700 text-white rounded-lg p-2 mb-2 w-full;
+}
+
+.contact-form-button {
+  @apply bg-blue-500 text-white rounded-lg p-2 mt-2 w-full;
+}

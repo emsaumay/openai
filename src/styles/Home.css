@@ -1,0 +1,11 @@
+.homeContainer {
+  @apply bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center;
+}
+
+.homeTitle {
+  @apply text-5xl font-bold mb-4;
+}
+
+.homeSubtitle {
+  @apply text-xl;
+}

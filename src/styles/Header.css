@@ -1,0 +1,15 @@
+.header-container {
+  @apply bg-black text-white flex justify-between items-center p-5;
+}
+
+.logo {
+  @apply text-2xl font-bold;
+}
+
+.nav-links {
+  @apply flex space-x-4;
+}
+
+.nav-link {
+  @apply text-lg hover:text-gray-300;
+}

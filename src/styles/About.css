@@ -1,0 +1,15 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.about-container {
+  @apply bg-gray-800 text-white;
+}
+
+.about-header {
+  @apply text-4xl font-bold mb-4;
+}
+
+.about-content {
+  @apply text-lg leading-relaxed;
+}

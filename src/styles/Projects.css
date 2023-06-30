@@ -1,0 +1,23 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.projects-container {
+  @apply bg-gray-800 text-white;
+}
+
+.project-card {
+  @apply bg-gray-700 p-4 rounded-lg shadow-lg m-4;
+}
+
+.project-title {
+  @apply text-2xl font-bold mb-2;
+}
+
+.project-description {
+  @apply text-lg;
+}
+
+.project-link {
+  @apply text-blue-500 hover:text-blue-400 underline;
+}
