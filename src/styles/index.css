@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles can be added below */
+/* Ensure to use Tailwind CSS classes primarily for styling */
+
+/* General layout styles */
+body {
+  @apply bg-gray-100;
+}
+
+#root {
+  @apply min-h-screen flex flex-col;
+}
+
+/* Header styles */
+header {
+  @apply bg-blue-600 text-white py-4;
+}
+
+/* Main content styles */
+main {
+  @apply flex flex-1 flex-col items-center justify-start pt-8;
+}
+
+/* Footer styles */
+footer {
+  @apply bg-blue-600 text-white py-4;
+}
+
+/* Custom scrollbar for infinite scroll */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-200;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-600;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-blue-700;
+}
