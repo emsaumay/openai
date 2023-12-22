@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for the Pokedex application */
+
+/* Search bar styles */
+.search-bar {
+  @apply bg-white shadow rounded-lg p-2;
+}
+
+/* Infinite scroll list styles */
+.infinite-pokemon-list {
+  @apply overflow-auto h-screen;
+}
+
+/* Pokemon card styles */
+.pokemon-card {
+  @apply bg-gray-100 rounded-lg shadow-md m-2 p-4 hover:bg-gray-200 transition ease-in-out duration-300;
+}
+
+/* Pokemon detail modal styles */
+.pokemon-detail-modal {
+  @apply fixed inset-0 bg-gray-900 bg-opacity-50 overflow-y-auto h-full w-full;
+}
+
+/* Type filter dropdown styles */
+.type-filter-dropdown {
+  @apply bg-white border border-gray-300 rounded shadow leading-tight focus:outline-none focus:shadow-outline;
+}
+
+/* Loader styles */
+.loader {
+  @apply flex justify-center items-center;
+}
+
+/* Error message styles */
+.error-message {
+  @apply text-red-500 text-center;
+}
+
+/* Responsive design */
+@media (min-width: 640px) {
+  .pokemon-card {
+    @apply p-6;
+  }
+}

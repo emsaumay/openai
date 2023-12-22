@@ -1,0 +1,54 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom styles for the Pokedex application */
+
+/* Search bar styles */
+#search-bar {
+  @apply w-full px-4 py-2 border rounded-md shadow-sm focus:outline-none focus:border-blue-300;
+}
+
+/* Infinite scroll list styles */
+#pokemon-list {
+  @apply w-full h-screen overflow-auto;
+}
+
+/* Pokemon card styles */
+.pokemon-card {
+  @apply m-2 p-4 border rounded-md shadow-lg hover:shadow-xl transition ease-in-out duration-300;
+}
+
+/* Pokemon card hover and focus styles */
+.pokemon-card:hover, .pokemon-card:focus {
+  @apply cursor-pointer transform scale-105;
+}
+
+/* Pokemon detail modal styles */
+#pokemon-modal {
+  @apply fixed inset-0 bg-gray-800 bg-opacity-50 overflow-y-auto h-full w-full;
+}
+
+/* Type filter dropdown styles */
+#type-filter-dropdown {
+  @apply inline-block relative w-64;
+}
+
+/* Loader styles */
+.loader {
+  @apply w-16 h-16 border-4 border-blue-500 border-solid rounded-full animate-spin;
+}
+
+/* Error message styles */
+.error-message {
+  @apply text-center text-red-600;
+}
+
+/* Utility styles for visibility */
+.hidden {
+  @apply hidden;
+}
+
+.visible {
+  @apply block;
+}
