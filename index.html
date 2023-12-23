@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcode Scanner</title>
+    <link href="css/tailwind.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+        <div class="flex flex-col items-center justify-center min-h-screen">
+            <button id="startScanningButton" class="btn btn-primary responsive-btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Start Scanning
+            </button>
+            <div id="cameraFeedContainer" class="camera-feed responsive-camera-feed mt-4 hidden w-full">
+                <!-- Camera feed will be inserted here -->
+            </div>
+            <div id="barcodeContent" class="barcode-display responsive-barcode-display mt-4 p-4 bg-white shadow rounded hidden">
+                <!-- Barcode content will be displayed here -->
+            </div>
+        </div>
+    </div>
+    <script src="js/barcode-scanner.js"></script>
+</body>
+</html>
