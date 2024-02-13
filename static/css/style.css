@@ -1,0 +1,73 @@
+/* Custom styles for our Django web application */
+body {
+  padding-top: 80px; /* Give some space on top of the page */
+}
+
+/* Align form fields in the center for a better look */
+.auth-form {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+/* Style the image upload input to look better */
+.image-upload {
+  margin-bottom: 20px;
+}
+
+/* Style the images that are displayed */
+.uploaded-images img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Add some custom styling to buttons */
+.btn-custom {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+/* Add custom styling to navigation bar */
+.navbar-custom {
+  background-color: #333;
+  border-color: #333;
+}
+
+/* Change the color of the links in the navbar */
+.navbar-custom .navbar-nav .nav-link {
+  color: white;
+}
+
+/* Change the color of the active link in the navbar */
+.navbar-custom .navbar-nav .active > .nav-link,
+.navbar-custom .navbar-nav .nav-link.active,
+.navbar-custom .navbar-nav .nav-link.show,
+.navbar-custom .navbar-nav .show > .nav-link {
+  color: #007bff;
+}
+
+/* Style the footer if needed */
+.footer {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+}
+
+/* Add some space around the main content */
+.main-content {
+  padding: 20px;
+}
+
+/* Style the header of the page */
+.page-header {
+  margin-bottom: 40px;
+}
+
+/* Make sure the forms look good on smaller screens */
+@media (max-width: 768px) {
+  .auth-form {
+    padding: 15px;
+    margin: 10px;
+  }
+}

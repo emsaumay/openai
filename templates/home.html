@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+  <h1>Welcome to the Image Upload Portal!</h1>
+  <p class="lead">Here you can upload and view your images.</p>
+  
+  {% if user.is_authenticated %}
+    <div class="alert alert-success" role="alert">
+      Hi {{ user.username }}! You are logged in.
+    </div>
+    <a href="{% url 'upload' %}" class="btn btn-primary">Upload New Image</a>
+    <hr>
+    <h3>Your Images:</h3>
+    <div class="row">
+      {% for image in images %}
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="{{ image.image.url }}" class="card-img-top" alt="{{ image.title }}">
+            <div class="card-body">
+              <p class="card-text">{{ image.title }}</p>
+            </div>
+          </div>
+        </div>
+      {% empty %}
+        <p>No images uploaded yet.</p>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="alert alert-warning" role="alert">
+      You are not logged in. Please <a href="{% url 'login' %}">log in</a> or <a href="{% url 'signup' %}">sign up</a> to upload and view images.
+    </div>
+  {% endif %}
+</div>
+{% endblock %}
